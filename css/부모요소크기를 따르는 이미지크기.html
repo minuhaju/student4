@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부</title>
+    <style>
+        *{margin:0 ;padding: 0;}
+        .wrap{
+            width: 80%;
+            margin: 0 auto;
+            background-color: #ccc;
+        }
+        .img-wrap{
+            width: 50%;
+            min-width: 200px;
+            max-width: 600px;
+
+            border:  1px solid#000;
+            
+            margin:50px 0;
+
+            background-color: #ef0;
+        }
+        .img-wrap img{
+            /*img요소를 block 레벨수준 변경 */
+            display: block
+            
+            /*100% 부모의 사용가능한 콘텐츠영역*/
+            width: 100%;
+            /* max-width: 100%; */
+            /*height의 초기값 auto*/
+            /* height: auto; */
+        }
+    </style>
+</head>
+<body>
+   <div class="wrap">
+
+    <div class="img-wrap ex1">
+      <img src="../assets/images/cherryblossom.jpg" alt="">
+    </div>
+
+    <div class="img-wrap ex2">
+      <img src="../assets/images/cherryblossom.jpg" alt="">
+    </div>
+
+    <div class="img-wrap ex3">
+      <img src="../assets/images/cherryblossom.jpg" alt="">
+    </div>
+
+
+   </div> 
+</body>
+</html>
