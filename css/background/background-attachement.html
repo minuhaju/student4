@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-attachement</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        /* width를 말하지 않으면 기본적 auto  */
+        .wrap{}
+        section{
+            height: 100vh;
+            padding:50px;
+            box-sizing: border-box;
+        }
+        .section1{
+            background-color: rgb(245, 254, 79);
+        }
+        .section2{
+            height: 500px;
+            background-color: rgb(112, 232, 164);
+            background-image: url(images/bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* background-attachment: fixed; */
+            background-position: 50% bottom;
+            background-attachment:scroll;
+            background-size: cover;
+        }
+        .section3{
+            background-color: rgb(242, 131, 67);
+        }
+        section title {
+            font-size: 100 px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+     <section class="section1">
+        <p class="title">제목1</p>
+     </section>
+     <section class="section2">
+        <p class="title">제목2</p>
+     </section>
+     <section class="section3">
+        <p class="title">제목3</p>
+     </section>
+
+    </div>
+</body>
+</html>

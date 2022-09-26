@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        /* .box{}    10
+        .box1{}      10
+        .box.box2{}  10+10
+        . box2{}     10
+        #sect1.box{} 100+10 */
+
+        /* .box>box2{}
+        .box.box2{}(=box2)그러나 값이 다르기에 표기법을 다르게한다
+        .box+box2{}
+        .box~box2{} */
+        .box{
+            width: 300px;
+            height: 100px;
+            background-color: #ccc;
+            margin-bottom: 50px;
+        }
+        .box2{
+            overflow: scroll;
+        }
+        .box3{
+            overflow:auto;
+        }
+        .box4{
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- div.box.box$*4>lorem -->
+    <!-- div.box.box$*4>lorem -->
+
+   <div class="box box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nemo harum maiores, natus molestias quos placeat dolorem alias vero fuga sunt quidem reiciendis explicabo ex mollitia, aliquid dolor delectus aliquam.</div>
+   <div class="box box2">Unde eius neque blanditiis quod quidem et, earum inventore ipsa cumque sint voluptatibus temporibus suscipit, reprehenderit magni enim eligendi provident esse odio molestiae quae dolores voluptatem! Reiciendis dolor dolores vel.</div>
+   <div class="box box3">Similique, asperiores, placeat ad error deleniti facere obcaecati dolorum nostrum aliquid ipsum officiis? Necessitatibus sed molestiae error debitis explicabo quia eveniet consectetur? Laborum laboriosam rerum voluptatibus quam odit temporibus ea!</div>
+   <div class="box box4">Alias voluptas perferendis obcaecati deserunt aut nesciunt eius, odit ullam doloremque reiciendis, natus explicabo praesentium ratione sed neque possimus, inventore itaque ab similique delectus quisquam qui labore ea sapiente. Dolores.</div> 
+</body>
+</html>
