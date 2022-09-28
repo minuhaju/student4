@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posion</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .wrap{
+            position: relative;
+            max-width: 50px;
+            background-color: #999;
+            height: 2000px;
+
+
+        }
+        .a{
+            background-color: #fff;
+        }
+        .box{
+            height: 150px ; border: 1px solid #000;
+        }
+        .box1,.box4{background-color: #ef8;
+
+        }
+        .box2,.box5{
+            background-color: #8ef
+           
+            /* posion:absolute */
+            /* top: 0;
+            left:0 */
+        }
+        .box3,.box6{background-color: rgb(144, 238, 136)}
+
+        .box.child{
+            background-color: #f00;
+            /* position: absolute; */
+            left: 0;
+            top: 0;
+
+        }
+        .box1{
+            /* position: relative; */
+            position: fixed;
+            left: 0;top: 0;
+        }
+        .box3{
+            position: fixed;
+            left: 0; bottom: 0;
+        }
+        .box5{
+            position: fixed;
+            right: 0;top: 0;  
+        }
+        .box6{
+            position: fixed;
+            right: 0; bottom: 0;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+  <div class="wrap"></div> 
+  <div class="a">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore a, quas nihil harum incidunt voluptatum ea dolorum eum esse, eligendi fuga culpa soluta ipsa qui pariatur voluptate asperiores eveniet doloremque.</a></div>
+
+  <!-- div.box.box$*6>{box$} -->
+  <div class="box box1">box1</div>
+  <div class="box box2">box2</div>
+   <div class="box child">2-2</div>
+  <div class="box box3">box3</div>
+  <div class="box box4">box4</div>
+   <div class="box child">4-2</div>
+  <div class="box box5">box5</div>
+  <div class="box box6">box6</div>
+
+
+
+</body>
+</html>
